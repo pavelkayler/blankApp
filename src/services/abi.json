@@ -1,0 +1,285 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Pool",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Token",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "addLiq",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "addToStaking",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Token",
+        "name": "firstToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Token",
+        "name": "secondToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOfFirstToken_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOfSecondToken_",
+        "type": "uint256"
+      }
+    ],
+    "name": "createNewPool",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "newPoolAddress_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "createStaking",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "deployAll10000",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Token",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployTokenTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllPools",
+    "outputs": [
+      {
+        "internalType": "contract Pool[]",
+        "name": "pools_",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "getBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "gerda_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "krendel_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rtk_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "profi_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Pool",
+        "name": "pool_",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolInfo",
+    "outputs": [
+      {
+        "internalType": "contract Token",
+        "name": "first_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Token",
+        "name": "second_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOfFirst_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOfSecond_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "firstEtherValue_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "secondEtherValue_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "poolOwner_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getStakingInfo",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "allLp_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "countLp_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastRewardTime_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "availableReward",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "recieveReward",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Pool",
+        "name": "pool_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Token",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Token",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "swap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
